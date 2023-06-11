@@ -5,17 +5,19 @@
   flex-direction: column;
   /* background-color: rgb(53, 53, 53); */
   background-color: transparent;
-  padding: 0 5% 0px;
+  /* padding: 0 5% 0px; */
 }
 .reviews .h {
   text-align: right;
   letter-spacing: 2px;
+  padding-top: 50px;
+  padding-right: 5%;
 }
 .reviews .revs {
   position: relative;
   /* margin: 0 5% 0; */
   height: 450px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -25,7 +27,7 @@
 .head {
   display: flex;
   justify-content: space-between;
-  margin: 20px 20px -30px 20px;
+  margin: 50px 20px -30px 20px;
 }
 .head .star {
   width: 100px;

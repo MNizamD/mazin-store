@@ -18,12 +18,12 @@
 #devs {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
-body, html {
+body, html, section {
   height: fit-content;
   justify-content: center;
   align-items: center;
   background-color: rgb(100, 100, 100);
-  min-width: 680px;
+  min-width: 400px;
   /* max-width: 100%; */
   /* overflow-x: hidden; */
   /* background-color: red; */
@@ -50,7 +50,7 @@ button:hover {
   background-color: transparent;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   button {
     font-size: 20px;
     padding: 10px 100px;

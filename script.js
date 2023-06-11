@@ -4,11 +4,11 @@ window.addEventListener('resize', navBlur);
 function navBlur () {
     var nav = document.querySelector("nav");
     var windowWidth = window.innerWidth;
-    nav.classList.toggle("low", window.scrollY > 100);
-    nav.classList.toggle("Mlow", windowWidth <= 1000 && window.scrollY > 100);
+    nav.classList.toggle("navlow", window.scrollY > 100);
+    nav.classList.toggle("navlowDsktp", windowWidth > 750 && window.scrollY > 100);
 
     var log = document.querySelector(".logo");
-    log.classList.toggle("low", window.scrollY > 200);
+    log.classList.toggle("logolow", window.scrollY > 200);
 };
 
 // Window Width observer
@@ -43,13 +43,14 @@ navLinks.forEach(function (link) {
 });
 
 // Left Right Button
-document.querySelector(".left").addEventListener("click",() => {
-    document.querySelector(".gallery").scrollBy(-1,0);
-
-});
-document.querySelector(".right").addEventListener("click",() => {
-    document.querySelector(".gallery").scrollBy(1,0);
-});
+const left = document.querySelector(".left");
+left.onclick = () =>{
+    document.querySelector(".gallery").scrollBy(-300,0);
+};
+const right = document.querySelector(".right");
+right.onclick = () =>{
+    document.querySelector(".gallery").scrollBy(300,0);
+};
 
 // Debug outline (CTRL + Space)
 var isDev = false;

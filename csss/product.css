@@ -29,14 +29,14 @@
   grid-column-start: span 1;
   grid-row-start: span 1;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   .product {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5% 10%;
-    gap: 30px;
+    gap: 10px;
   }
   .product .h {
     font-size: 30px;

@@ -3,6 +3,7 @@
   /* height: fit-content; */
   position: relative;
   /* outline: 5px solid black; */
+  z-index: 1;
 }
 .prodMain .bg2 {
   display: block;
@@ -12,7 +13,7 @@
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
   /* filter: brightness(0.3) contrast(0.9); */
 }
 .prodMain .contnr {
@@ -27,7 +28,6 @@
   /* padding: 0 10% 0; */
   cursor: default;
   z-index: 1;
-  
 }
 .prodMain .clear {
   width: 100%;
@@ -80,12 +80,12 @@
 }
 .prodMain .glass {
   width: 100%;
-  height: 80%;
+  height: 70%;
+  /* background-color: red; */
   backdrop-filter: blur(30px);
 }
 
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
   .prodMain .clear {
     height: 20%;
     background: linear-gradient(
@@ -108,7 +108,7 @@
     margin-right: auto;
     margin-bottom: 5%;
   }
-}
-@media screen and (max-width: 900px){
-
+  .glass {
+    height: 80% !important;
+  }
 }
