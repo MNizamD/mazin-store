@@ -1,0 +1,75 @@
+footer{
+    position: relative;
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    gap: 15%;
+}
+footer .txt{
+    width: 80%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+footer .icons{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: fit-content;
+    gap: 5%;
+}
+footer .icons svg{
+    height: 150px;
+    fill: rgb(70, 70, 70);
+}
+footer .icons #inf p{
+    color: white;
+    line-height: 50px;
+    width: max-content;
+    font-size: 20px;
+}
+footer .icons #inf span{
+    cursor: default;
+    display: inline-block;
+    color: gray;
+    width: 100px;
+}
+@media screen and (max-width: 1000px){
+    footer .icons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    .vl{
+        display: none;
+    }
+    footer .icons{
+        height: 400px;
+    }
+    footer .icons svg{
+        margin: auto;
+        height: 80px;
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    footer .icons #inf{
+        grid-column-start: span 3;
+        grid-row-start: span 1;
+    }
+    footer .icons #inf p{
+        line-height: 30px;
+    }
+    footer .icons #inf span{
+        cursor: default;
+        display: inline-block;
+        color: gray;
+        width: 120px;
+    }
+}

@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: 'inder';
+    margin: 0;
+    padding: 0;
+}
+.dev {
+    outline: 1px solid gray;
+}
+#behavior{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    z-index: 99;
+    opacity: 0;
+}
+#devw, #devs{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+body{
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 100, 100);
+    min-width: 550px;
+}
+button{
+    all: unset;
+    width: fit-content;
+    display: block;
+    align-self: center;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: normal;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 900px){
+    button{
+    font-size: 20px;
+    padding: 10px 100px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 8px;
+    border-radius: 11px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border-radius: 11px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e2e2e2;
+  }

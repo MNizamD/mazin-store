@@ -1,0 +1,23 @@
+.mom{
+    background-color: red;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c1{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+.c2{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+.dad{
+    width: 600px;
+    height: 600px;
+    background-color: violet;
+}

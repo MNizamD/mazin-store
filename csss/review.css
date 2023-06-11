@@ -1,0 +1,120 @@
+.reviews{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(53, 53, 53); */
+    background-color: transparent;
+    padding: 0 10% 0px;
+
+}
+.reviews .h{
+    text-align: right;
+}
+.reviews .revs{
+    position: relative;
+    margin: 0 5% 0;
+    height: 420px;
+    padding-top: 15px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    transition: ease-in-out .5s;
+    z-index: 1;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px -30px 20px;
+}
+.head .star{
+    width: 100px;
+    fill: yellow;
+    margin: auto;
+}
+#c1 .pfp{
+    background-image: url("/resrc/c1.webp");
+    background-size: cover;
+    border: 1px solid rgb(2, 255, 129);
+    box-shadow: 0 0 50px rgb(2, 255, 129);
+}
+#c2 .pfp{
+    background-image: url("/resrc/c3.jpg");
+    background-size: cover;
+    border: 1px solid rgb(255, 166, 2);
+    box-shadow: 0 0 50px rgb(255, 166, 2);
+}
+#c3 .pfp{
+    background-image: url("/resrc/c2.jpg");
+    background-size: cover;
+    border: 1px solid rgb(91, 2, 255);
+    box-shadow: 0 0 50px rgb(91, 2, 255);
+}
+#c1 .com{
+    background-color: rgb(2, 255, 129, .3);
+}
+#c2 .com{
+    background-color: rgb(255, 166, 2, .3);
+}
+#c3 .com{
+    background-color: rgb(91, 2, 255, .3);
+}
+.pfp{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* margin: 30px 100px -20px; */
+    /* margin-bottom: -25; */
+    border-radius: 50%;
+    filter: contrast(.8);
+    transition: ease-in-out .5s;
+}
+.com{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    line-height: 25px;
+    color: white;
+    transition: ease-in-out .5s;
+}
+#c1 .com{
+    box-shadow: 0 0 50px rgb(2, 255, 129);
+}
+#c2 .com{
+    box-shadow: 0 0 50px rgb(255, 166, 2);
+}
+#c3 .com{
+    box-shadow: 0 0 50px rgb(91, 2, 255);
+}
+@media screen and (max-width: 1400px){
+
+    .revs{
+        width: 80%;
+        padding-left: 200px;
+        padding-right: 200px;
+        scroll-snap-type: x mandatory;
+        gap: 30%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    #c1, #c2, #c3{
+        scroll-snap-align: center;
+    }
+    .reviews .label{
+        font-size: 30px;
+    }
+    .com{
+        width: 350px;
+        padding: 45px 30px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .reviews{
+        height: 25%;
+    }
+    .revs{
+        gap: 50%;
+    }
+}

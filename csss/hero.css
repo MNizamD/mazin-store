@@ -1,0 +1,66 @@
+.hero {
+    position: relative;
+    display: flex;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: -200px;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    transition: ease-in-out .5s;
+}
+.hero .text{
+    width: 80%;
+    margin: auto 5% auto;
+}
+.vl{
+    height: 100px;
+    width: 1px;
+    background-color: white;
+}
+.hero .text .h1{
+    font-size: 15px;
+    color: darkgray;
+    letter-spacing: 10px;
+}
+.hero .text .h2{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'inder';
+    margin-top: 10px;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+.hero .text .p{
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+.hero svg{
+    width: 100px;
+    margin-left: 3%;
+    margin-right: -50px;
+}
+@media screen and (max-width: 900px){
+    .hero svg{
+        display: none;
+    }
+    .hero .text .h1{
+        font-size: 20;
+    }
+    .hero .text .h2{
+        letter-spacing: 3px;
+    }
+    .hero .text .p{
+        margin-top: 10px;
+        text-align: left;
+        font-family: 'inder';
+        font-size: 30;
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+}
