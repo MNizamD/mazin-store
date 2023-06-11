@@ -4,6 +4,7 @@
   background-color: var(--dark-gray);
   padding: 3% 10%;
   align-items: center;
+  width: 100%z;
 }
 .product .h {
   width: 100%;

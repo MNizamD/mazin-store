@@ -18,12 +18,14 @@
 #devs {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
-body {
+body, html {
   height: fit-content;
   justify-content: center;
   align-items: center;
   background-color: rgb(100, 100, 100);
   min-width: 680px;
+  /* max-width: 100%; */
+  /* overflow-x: hidden; */
   /* background-color: red; */
 }
 button {

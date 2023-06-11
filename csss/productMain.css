@@ -10,7 +10,9 @@
   width: 100%;
   background-image: url("../resrc/bgDsk.jpg");
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
+  transition: ease-in-out .5s;
   /* filter: brightness(0.3) contrast(0.9); */
 }
 .prodMain .contnr {
@@ -84,9 +86,6 @@
 
 
 @media screen and (max-width: 900px) {
-  .prodMain{
-    height: 2500px;
-  }
   .prodMain .clear {
     height: 20%;
     background: linear-gradient(

@@ -1,125 +1,122 @@
-.prodMain .sale{
-    height:60%;
-    /* background-color: rgba(255, 0, 0, 0.034); */
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 50px;
+.prodMain .sale {
+  height: 60%;
+  /* background-color: rgba(255, 0, 0, 0.034); */
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.cols{
-    min-width: 700px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    transition: ease-in-out 0.3s;
+.cols {
+  min-width: 45%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  transition: ease-in-out 0.3s;
 }
-.sale .card{
-    grid-column-start: span 1;
-    grid-row-start: span 1 ;
-    width: 100%;
-    height: 200px;
-    margin: 0 auto 0 auto;
-    border-radius: 30px;
-    background-color: rgba(161, 161, 161, 0.349);
+.sale::-webkit-scrollbar {
+  width: 5px;
+}
+.sale .card {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  border-radius: 30px;
+  background-color: rgba(161, 161, 161, 0.349);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
 }
-.card .icon{
-    height: 150px;
-    width: 150px;
-    margin: auto 0 auto 0;
-    background-size: cover;
+.card .icon {
+  height: 150px;
+  width: 150px;
+  margin: auto 0 auto 0;
+  background-size: cover;
 }
-.card:hover{
-    /* scale: 120%; */
-    background-color: rgba(84, 39, 94, 0.3);
-    box-shadow: 0 0 50px rgba(169, 77, 187);
-    
+.card:hover {
+  /* scale: 120%; */
+  background-color: rgba(84, 39, 94, 0.3);
+  box-shadow: 0 0 50px rgba(169, 77, 187);
 }
-.card .text{
-    width: 60%;
-    height: 130px;
-    margin: auto 0 auto 0;
-    display: flex;
-    justify-content: space-between;
-    /* background-color: orange; */
+.card .text {
+  width: 60%;
+  height: 130px;
+  margin: auto 0 auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: orange; */
 }
-.low button{
-    background-color: white;
-    border: 3px solid white;
-    color: black;
-    font-weight: bold;
+.low button {
+  background-color: white;
+  border: 3px solid white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15%;
 }
-.low button:hover{
-    background-color: transparent;
-    color: white;
-    font-weight: normal;
+.low button:hover {
+  background-color: transparent;
+  color: white;
+  font-weight: normal;
 }
-.text .h1{
-    font-size: 35px;
-    letter-spacing: 2px;
+.text .h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
 }
-.text .h{
-    font-size: 25px;
-    letter-spacing: unset;
+.text .h {
+  font-size: 20px;
+  letter-spacing: unset;
+  margin-right: auto;
 }
-.text .low{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.text .low {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#ic1{
-    background-image: url("../resrc/item5.png");
+#ic1 {
+  background-image: url("../resrc/item5.png");
 }
-#ic2{
-    background-image: url("../resrc/item2.png");
+#ic2 {
+  background-image: url("../resrc/item2.png");
 }
-#ic3{
-    background-image: url("../resrc/item1.png");
+#ic3 {
+  background-image: url("../resrc/item1.png");
 }
-#ic4{
-    background-image: url("../resrc/item3.png");
+#ic4 {
+  background-image: url("../resrc/item3.png");
 }
-#ic5{
-    background-image: url("../resrc/item6.png");
+#ic5 {
+  background-image: url("../resrc/item6.png");
 }
-#ic6{
-    background-image: url("../resrc/item4.png");
+#ic6 {
+  background-image: url("../resrc/item4.png");
 }
-@media screen and (max-width: 1500px){
-    .cols{
-        min-width: 500px;
-    }
-    .text .h{
-        font-size: 20px;
-    }
-    .low button {
-        padding: 5px 30px;
-    }
-    .card .text{
-        width: 50%;
-    }
-}
-@media screen and (max-width: 900px){
-  .prodMain .sale{
+
+@media screen and (max-width: 900px) {
+  .prodMain .sale {
     flex-direction: column;
     min-width: unset;
     width: 100%;
-    height: 75%;
+    /* height: 75%; */
     gap: 40px;
+
+    justify-content: space-between;
+    overflow-y: scroll;
   }
-  .cols{
+  .cols {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
   .low button {
-    padding: 10px 50px;
+    padding: 10px 80px;
   }
-  .card .text{
-    width: 60%;
+  .sale .card {
+    height: 250px;
   }
 }
