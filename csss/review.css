@@ -111,10 +111,7 @@
     }
 }
 @media screen and (max-width: 1000px){
-    .reviews{
-        height: 25%;
-    }
     .revs{
-        gap: 50%;
+        gap: 50px;
     }
 }

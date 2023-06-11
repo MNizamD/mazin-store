@@ -6,11 +6,12 @@
     padding-top: 50px;
 }
 .cols{
-    min-width: 600px;
+    min-width: 700px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    transition: ease-in-out 0.3s;
 }
 .sale .card{
     grid-column-start: span 1;
@@ -19,7 +20,7 @@
     height: 200px;
     margin: 0 auto 0 auto;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(161, 161, 161, 0.349);
 
     display: flex;
     align-items: center;
@@ -59,9 +60,11 @@
 }
 .text .h1{
     font-size: 35px;
+    letter-spacing: 2px;
 }
 .text .h{
     font-size: 25px;
+    letter-spacing: unset;
 }
 .text .low{
     display: flex;
@@ -86,7 +89,7 @@
 #ic6{
     background-image: url("../resrc/item4.png");
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1500px){
     .cols{
         min-width: 500px;
     }
@@ -95,6 +98,9 @@
     }
     .low button {
         padding: 5px 30px;
+    }
+    .card .text{
+        width: 50%;
     }
 }
 @media screen and (max-width: 900px){
@@ -112,5 +118,8 @@
   }
   .low button {
     padding: 10px 50px;
+  }
+  .card .text{
+    width: 60%;
   }
 }

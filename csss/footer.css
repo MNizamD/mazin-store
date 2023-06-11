@@ -1,14 +1,13 @@
 footer{
     position: relative;
     background-color: black;
-    height: 80vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    gap: 15%;
 }
 footer .txt{
     width: 80%;
@@ -51,7 +50,7 @@ footer .icons #inf span{
         display: none;
     }
     footer .icons{
-        height: 400px;
+        height: 200px;
     }
     footer .icons svg{
         margin: auto;
@@ -71,5 +70,8 @@ footer .icons #inf span{
         display: inline-block;
         color: gray;
         width: 120px;
+    }
+    .ftr-txt{
+        font-size: 15px;
     }
 }
