@@ -33,19 +33,19 @@
     margin: auto;
 }
 #c1 .pfp{
-    background-image: url("/resrc/c1.webp");
+    background-image: url("../resrc/c1.webp");
     background-size: cover;
     border: 1px solid rgb(2, 255, 129);
     box-shadow: 0 0 50px rgb(2, 255, 129);
 }
 #c2 .pfp{
-    background-image: url("/resrc/c3.jpg");
+    background-image: url("../resrc/c3.jpg");
     background-size: cover;
     border: 1px solid rgb(255, 166, 2);
     box-shadow: 0 0 50px rgb(255, 166, 2);
 }
 #c3 .pfp{
-    background-image: url("/resrc/c2.jpg");
+    background-image: url("../resrc/c2.jpg");
     background-size: cover;
     border: 1px solid rgb(91, 2, 255);
     box-shadow: 0 0 50px rgb(91, 2, 255);

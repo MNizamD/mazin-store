@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'inder';
-    src: url("/fonts/Inder-Regular.ttf");
+    src: url("../fonts/Inder-Regular.ttf");
 }
 @font-face {
     font-family: 'basic';
-    src: url("/fonts/Basic-Regular.ttf");
+    src: url("../fonts/Basic-Regular.ttf");
 }
 :root{
     --dark-gray: #353535;

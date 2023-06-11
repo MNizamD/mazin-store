@@ -1,14 +1,14 @@
 #p1 {
-  background-image: url("/resrc/item1.png");
+  background-image: url("../resrc/item1.png");
 }
 #p2 {
-  background-image: url("/resrc/item2.png");
+  background-image: url("../resrc/item2.png");
 }
 #p3 {
-  background-image: url("/resrc/item3.png");
+  background-image: url("../resrc/item3.png");
 }
 #p4 {
-  background-image: url("/resrc/item4.png");
+  background-image: url("../resrc/item4.png");
 }
 .arrow {
   fill: var(--gray);

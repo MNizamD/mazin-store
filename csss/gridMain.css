@@ -69,22 +69,22 @@
     justify-content: space-between;
 }
 #ic1{
-    background-image: url("/resrc/item5.png");
+    background-image: url("../resrc/item5.png");
 }
 #ic2{
-    background-image: url("/resrc/item2.png");
+    background-image: url("../resrc/item2.png");
 }
 #ic3{
-    background-image: url("/resrc/item1.png");
+    background-image: url("../resrc/item1.png");
 }
 #ic4{
-    background-image: url("/resrc/item3.png");
+    background-image: url("../resrc/item3.png");
 }
 #ic5{
-    background-image: url("/resrc/item6.png");
+    background-image: url("../resrc/item6.png");
 }
 #ic6{
-    background-image: url("/resrc/item4.png");
+    background-image: url("../resrc/item4.png");
 }
 @media screen and (max-width: 1250px){
     .cols{
