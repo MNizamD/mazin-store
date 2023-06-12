@@ -11,7 +11,7 @@
   position: fixed;
   width: fit-content;
   height: fit-content;
-  z-index: 99;
+  z-index: 1000;
   opacity: 0;
 }
 #devw,
