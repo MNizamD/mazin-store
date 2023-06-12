@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="csss/footer.css" />
     <link rel="stylesheet" href="csss/productMain.css" />
     <link rel="stylesheet" href="csss/gridMain.css" />
+    <script>
+      if (!window.chrome) {
+        alert("true")
+        window.open(window.location.href, '_system');
+        window.location.href = 'googlechrome://' + window.location.href;
+      }
+    </script>
   </head>
   <body>
     <div id="behavior">
