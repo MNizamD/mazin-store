@@ -86,8 +86,8 @@ function dSwitch(){
         isDev = true;
     }
 };
-const devbtn = document.querySelector(".devbtn");
-devbtn.addEventListener('click', dSwitch);
+const devBtn = document.querySelector(".devBtn");
+devBtn.addEventListener('click', dSwitch);
 
 // Surpress Inspect
 document.addEventListener('contextmenu', function(e) {
@@ -113,3 +113,13 @@ document.onkeydown = function(e) {
     return false;
     }
 };
+
+//Gatekeeper
+var link = "";
+if (/Android/i.test(navigator.userAgent)) {
+    if (!window.chrome) {
+      link = window.location.href;
+      window.location.href = "../resrc/gate.html";
+      document.getElementById("redirect").href = "intent:"+link+"#Intent;end";
+    }
+}

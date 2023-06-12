@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Open through chrome</title>
+  </head>
+  <link rel="stylesheet" href="csss/fonts.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "inder";
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(99, 99, 99);
+    }
+    .wrap {
+      max-width: 250px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.192);
+      backdrop-filter: blur(30px);
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: 70px;
+    }
+    p {
+      font-size: 15px;
+      margin: 10% 15% 10% 15%;
+      text-align: center;
+    }
+    button a {
+      all: unset;
+    }
+    button {
+      all: unset;
+      width: fit-content;
+      height: fit-content;
+      font-size: 20px;
+      border-radius: 30px;
+      padding: 10px 50px;
+      background-color: black;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      cursor: pointer;
+      color: white;
+      font-weight: normal;
+      border: 3px solid white;
+      background-color: transparent;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <img
+        src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+        alt=""
+      />
+      <p>For a better experience, we recommend using Google Chrome browser.</p>
+      <button><a id="redirect" href="intent:https://google.com#Intent;end" target="_blank">Visit</a></button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
