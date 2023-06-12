@@ -115,13 +115,8 @@ document.onkeydown = function(e) {
 };
 
 //Gatekeeper
-var link = "";
 if (/Android/i.test(navigator.userAgent)) {
     if (!window.chrome) {
-      link = window.location.href;
-        alert(link+"10:25");
       window.location.href = "resrc/gate.html";
-        var newLink = "intent:"+link+"#Intent;end";
-      document.getElementById("redirect").href = newLink;
     }
 }
