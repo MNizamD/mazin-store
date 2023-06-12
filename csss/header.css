@@ -27,7 +27,7 @@ header .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    row-gap: 5%;
     padding: 0 10% 0;
     cursor: default;
     z-index: 1;
