@@ -120,7 +120,7 @@ if (/Android/i.test(navigator.userAgent)) {
     if (!window.chrome) {
       link = window.location.href;
         alert(link);
-      window.location.href = "gate.html";
+      window.location.href = "resrc/gate.html";
         var newLink = "intent:"+link+"#Intent;end";
       document.getElementById("redirect").href = newLink;
     }
