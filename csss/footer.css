@@ -1,99 +1,99 @@
-footer{
-    position: relative;
-    background-color: black;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+footer {
+  position: relative;
+  background-color: black;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-footer .txt{
-    max-width: 800px;
-    color: white;
-    text-align: center;
+footer .txt {
+  max-width: 800px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+footer .icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: fit-content;
+  gap: 5%;
+}
+footer .icons svg {
+  height: 150px;
+  fill: rgb(70, 70, 70);
+}
+footer .icons #inf p {
+  color: white;
+  line-height: 50px;
+  width: max-content;
+  font-size: 20px;
+}
+footer .icons #inf span {
+  cursor: default;
+  display: inline-block;
+  color: gray;
+  width: 100px;
+}
+@media screen and (max-width: 1000px) {
+  footer .icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    gap: 20px;
+  }
+  .vl {
+    display: none;
+  }
+  footer .icons {
+    height: 200px;
+  }
+  footer .icons svg {
+    margin: auto;
+    height: 80px;
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  footer .icons #inf {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+  }
+  footer .icons #inf p {
     line-height: 30px;
-}
-footer .icons{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: fit-content;
-    gap: 5%;
-}
-footer .icons svg{
-    height: 150px;
-    fill: rgb(70, 70, 70);
-}
-footer .icons #inf p{
-    color: white;
-    line-height: 50px;
-    width: max-content;
-    font-size: 20px;
-}
-footer .icons #inf span{
+  }
+  footer .icons #inf span {
     cursor: default;
     display: inline-block;
     color: gray;
-    width: 100px;
+    width: 120px;
+  }
+  .ftr-txt {
+    font-size: 15px;
+  }
 }
-@media screen and (max-width: 1000px){
-    footer .icons{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 20px;
-        gap: 20px;
-    }
-    .vl{
-        display: none;
-    }
-    footer .icons{
-        height: 200px;
-    }
-    footer .icons svg{
-        margin: auto; 
-        height: 80px;
-        grid-column-start: span 1;
-        grid-row-start: span 1;
-    }
-    footer .icons #inf{
-        grid-column-start: span 3;
-        grid-row-start: span 1;
-    }
-    footer .icons #inf p{
-        line-height: 30px;
-    }
-    footer .icons #inf span{
-        cursor: default;
-        display: inline-block;
-        color: gray;
-        width: 120px;
-    }
-    .ftr-txt{
-        font-size: 15px;
-    }
+.devBtn {
+  position: absolute;
+  top: 88%;
+  left: 0;
+  padding: 10px 20px;
+  opacity: 0;
 }
-.devBtn{
-    position: absolute;
-    top: 88%;
-    left: 0;
-    padding: 10px 20px;
-    opacity: 0;
-}
-@media screen and (max-width: 720px){
-    footer .icons svg{
-        height: 70px;
-    }
-    footer .icons #inf p{
-        letter-spacing: 0;
-    }
-    footer .icons #inf span{
-        width: 60px;
-    }
-    .ftr-txt{
-        padding: auto 10%;
-    }
+@media screen and (max-width: 720px) {
+  footer .icons svg {
+    height: 70px;
+  }
+  footer .icons #inf p {
+    letter-spacing: 0;
+  }
+  footer .icons #inf span {
+    width: 60px;
+  }
+  .ftr-txt {
+    padding: auto 10%;
+  }
 }
