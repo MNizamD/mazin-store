@@ -86,8 +86,8 @@ function dSwitch(){
         isDev = true;
     }
 };
-const devBtn = document.querySelector(".devBtn");
-devBtn.addEventListener('click', dSwitch);
+const devbtn = document.querySelector(".devbtn");
+devbtn.addEventListener('click', dSwitch);
 
 // Surpress Inspect
 document.addEventListener('contextmenu', function(e) {
