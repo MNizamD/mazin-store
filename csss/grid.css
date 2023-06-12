@@ -35,7 +35,7 @@
 }
 .right {
   margin-left: -25px;
-  z-index: 1;
+  z-index: 3;
 }
 .cont {
   height: 300px;
@@ -66,12 +66,18 @@
   background-repeat: no-repeat;
   scroll-snap-align: center;
   transition: scale 0.3s;
+  filter: saturate(.8);
 }
 
 .gallery li:hover {
   scale: 110%;
 }
-
+@media screen and (max-width: 1000px){
+  .gallery .img{
+    width: 200px;
+    height: 200px;
+  }
+}
 @media screen and (max-width: 750px) {
   .cont {
     width: 100%;

@@ -36,6 +36,7 @@
   width: 150px;
   margin: auto 0 auto 0;
   background-size: cover;
+  filter: saturate(.8);
 }
 .card:hover {
   /* scale: 120%; */

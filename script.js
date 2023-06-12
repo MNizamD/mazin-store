@@ -44,13 +44,22 @@ navLinks.forEach(function (link) {
 
 // Left Right Button
 const left = document.querySelector(".left");
-left.onclick = () =>{
-    document.querySelector(".gallery").scrollBy(-300,0);
-};
 const right = document.querySelector(".right");
-right.onclick = () =>{
-    document.querySelector(".gallery").scrollBy(300,0);
-};
+const gallery = document.querySelector(".gallery");
+
+left.addEventListener('click', function() {
+    gallery.scrollBy({
+        left: -(Math.ceil(gallery.offsetWidth/3)),
+        behavior: 'smooth'
+    });
+});
+  
+right.addEventListener('click', function() {
+    gallery.scrollBy({
+        left: Math.ceil(gallery.offsetWidth/3),
+        behavior: 'smooth'
+    });
+});
 
 // Debug outline (CTRL + Space)
 var isDev = false;
@@ -58,22 +67,27 @@ var bhv = document.getElementById('behavior');
 var els = document.querySelectorAll('*');
 document.addEventListener('keydown', (event)=> {
     if (event.ctrlKey && event.code === 'Space') {
-        if (isDev){
-            els.forEach(function(el) {
-                el.classList.remove("dev")
-            })
-            bhv.style.opacity = 0;
-            isDev = false;
-        } else {
-            els.forEach(function(el) {
-                el.classList.add("dev")
-            })
-            bhv.style.opacity = 1;
-            isDev = true;
-        }
+        dSwitch();
         event.preventDefault();
     }
 });
+function dSwitch(){
+    if (isDev){
+        els.forEach(function(el) {
+            el.classList.remove("dev")
+        })
+        bhv.style.opacity = 0;
+        isDev = false;
+    } else {
+        els.forEach(function(el) {
+            el.classList.add("dev")
+        })
+        bhv.style.opacity = 1;
+        isDev = true;
+    }
+};
+const devBtn = document.querySelector(".devBtn");
+devBtn.addEventListener('click', dSwitch);
 
 // Surpress Inspect
 document.addEventListener('contextmenu', function(e) {

@@ -45,6 +45,7 @@ footer .icons #inf span{
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 20px;
+        gap: 20px;
     }
     .vl{
         display: none;
@@ -74,6 +75,13 @@ footer .icons #inf span{
     .ftr-txt{
         font-size: 15px;
     }
+}
+.devBtn{
+    position: absolute;
+    top: 88%;
+    left: 0;
+    padding: 10px 20px;
+    opacity: 0;
 }
 @media screen and (max-width: 720px){
     footer .icons svg{
