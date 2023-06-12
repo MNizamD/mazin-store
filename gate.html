@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "inder";
+      src: url("../fonts/Inder-Regular.ttf");
+    }
+    * {
+      font-family: "inder";
+    }
+    body {
+      height: 100vh;
+      min-width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("resrc/gateBG.jpg");
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .wrap {
+      max-width: 250px;
+      height: 300px;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.486);
+      backdrop-filter: blur(20px);
+    }
+    img {
+      width: 70px;
+    }
+    p {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin: 10% 15% 10% 15%;
+    }
+    a {
+      all: unset;
+    }
+    button {
+      all: unset;
+      width: fit-content;
+      height: fit-content;
+      font-size: 20px;
+      border-radius: 30px;
+      padding: 10px 50px;
+      background-color: black;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    button:hover {
+      cursor: pointer;
+      color: white;
+      font-weight: normal;
+      border: 3px solid white;
+      background-color: transparent;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <img
+        src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+        alt=""
+      />
+      <p>For a better experience, we recommend using Google Chrome browser.</p>
+      <a
+        id="rdrct"
+        href="intent:https://mnizamd.github.io/mazin-store/#Intent;end"
+        target="_blank"
+        ><button>VISIT</button></a
+      >
+    </div>
+  </body>
+</html>
