@@ -10,14 +10,11 @@
 .reviews .h {
   text-align: right;
   letter-spacing: 2px;
-  padding-top: 50px;
   padding-right: 5%;
 }
 .reviews .revs {
   position: relative;
-  /* margin: 0 5% 0; */
   height: 450px;
-  /* padding-top: 40px; */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -25,8 +22,10 @@
   z-index: 1;
 }
 .head {
+  height: fit-content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 50px 20px -30px 20px;
 }
 .head .star {
@@ -92,8 +91,8 @@
 }
 @media screen and (max-width: 1000px) {
   .reviews .revs {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
     scroll-snap-type: x mandatory;
     gap: 30%;
     overflow-y: hidden;
@@ -111,5 +110,25 @@
   .com {
     width: 350px;
     padding: 45px 30px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .reviews .revs{
+    /* padding-left: unset;
+    padding-right: unset; */
+    height: 500px;
+  }
+  .head {
+    margin: 50px 20px -45px 20px;
+  }
+  .pfp{
+    width: 70px;
+    height: 70px;
+  }
+  .com{
+    width: 280px;
+    height: 300px;
+    /* padding: 45px 30px; */
   }
 }

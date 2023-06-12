@@ -53,7 +53,7 @@ footer .icons #inf span{
         height: 200px;
     }
     footer .icons svg{
-        margin: auto;
+        margin: auto; 
         height: 80px;
         grid-column-start: span 1;
         grid-row-start: span 1;
@@ -73,5 +73,19 @@ footer .icons #inf span{
     }
     .ftr-txt{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 720px){
+    footer .icons svg{
+        height: 70px;
+    }
+    footer .icons #inf p{
+        letter-spacing: 0;
+    }
+    footer .icons #inf span{
+        width: 60px;
+    }
+    .ftr-txt{
+        padding: auto 10%;
     }
 }

@@ -45,9 +45,8 @@
 
   /* transition: ease-in-out .5s; */
 }
-.prodMain .h1 {
+.clear .text .h1 {
   color: white;
-  font-family: "inder";
   font-size: 50px;
   letter-spacing: 5px;
 }
@@ -84,10 +83,14 @@
   /* background-color: red; */
   backdrop-filter: blur(30px);
 }
+.sales-header{
+  text-align: center;
+  line-height: 50px;
+}
 
 @media screen and (max-width: 750px) {
   .prodMain .clear {
-    height: 20%;
+    /* height: 30%; */
     background: linear-gradient(
       200deg,
       rgba(255, 255, 255, 0) 0%,
@@ -95,13 +98,17 @@
       rgba(0, 0, 0, 0.9) 100%
     );
   }
+  .clear .text .h1 {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
   .prodMain .btns {
     gap: 10px;
     display: flex;
     justify-content: center;
   }
   .prodMain .btns button {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
   .prodMain .text {
     margin-left: auto;

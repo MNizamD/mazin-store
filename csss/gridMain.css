@@ -3,8 +3,8 @@
   /* background-color: rgba(255, 0, 0, 0.034); */
   display: flex;
   justify-content: space-evenly;
-  padding-top: 100px;
-  /* padding-bottom: 100px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .cols {
   min-width: 45%;
@@ -62,12 +62,12 @@
   color: white;
   font-weight: normal;
 }
-.text .h1 {
+.text .h {
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 30px;
 }
-.text .h {
+.text .p {
   font-size: 20px;
   letter-spacing: unset;
   margin-right: auto;
@@ -97,14 +97,17 @@
   background-image: url("../resrc/item4.png");
 }
 @media screen and (max-width: 1000px) {
-    .low{
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .low button {
-        margin-top: 10px;
-        padding: 5px 20%;
-      }
+  .low {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .low button {
+    margin-top: 10px;
+    padding: 5px 20%;
+  }
+  .sale .card{
+    justify-content: space-evenly;
+  }
 }
 @media screen and (max-width: 750px) {
   .prodMain .sale {
@@ -112,7 +115,7 @@
     min-width: unset;
     width: 100%;
     /* height: 70%; */
-    gap: 40px;
+    gap: 20px;
 
     justify-content: space-between;
     overflow-y: scroll;
@@ -121,11 +124,20 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    gap: 20px;
   }
   .low button {
     padding: 10px 30%;
   }
-  .sale .card {
-    height: 250px;
+
+  .card .icon {
+    height: 100px;
+    width: 100px;
+  }
+  .card .text .h1 {
+    font-size: 25px;
+  }
+  .card .text .h {
+    font-size: 5px;
   }
 }
