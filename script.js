@@ -119,7 +119,7 @@ var link = "";
 if (/Android/i.test(navigator.userAgent)) {
     if (!window.chrome) {
       link = window.location.href;
-      window.location.href = "../resrc/gate.html";
+      window.location.href = "gate.html";
       document.getElementById("redirect").href = "intent:"+link+"#Intent;end";
     }
 }
