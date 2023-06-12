@@ -65,7 +65,7 @@ header button:hover{
         font-size: 25px;
         letter-spacing: 20px;
     }
-    .content .p{
+    header .content p{
         font-size: 15px;
         letter-spacing: 1px;
     }

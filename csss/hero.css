@@ -56,14 +56,9 @@
     font-size: 20;
   }
   .hero .text .h2 {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
   .hero .text .p {
-    margin-top: 10px;
-    text-align: left;
-    font-family: "inder";
-    font-size: 30;
-    line-height: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 }

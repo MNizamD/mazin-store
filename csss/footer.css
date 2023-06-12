@@ -94,6 +94,8 @@ footer .icons #inf span {
     width: 60px;
   }
   .ftr-txt {
-    padding: auto 10%;
+    letter-spacing: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

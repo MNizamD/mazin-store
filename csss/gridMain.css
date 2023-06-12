@@ -40,8 +40,8 @@
 }
 .card:hover {
   /* scale: 120%; */
-  background-color: rgba(84, 39, 94, 0.3);
-  box-shadow: 0 0 50px rgba(169, 77, 187);
+  background-color: rgba(51, 51, 51, 0.3);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
 }
 .card .text {
   width: 60%;
