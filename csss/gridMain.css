@@ -64,11 +64,13 @@
   font-weight: normal;
 }
 .text .h {
+  color: white;
   font-size: 30px;
   letter-spacing: 2px;
   line-height: 30px;
 }
 .text .p {
+  color: var(--gray);
   font-size: 20px;
   letter-spacing: unset;
   margin-right: auto;
