@@ -27,6 +27,10 @@ footer .icons {
 footer .icons svg {
   height: 150px;
   fill: rgb(70, 70, 70);
+  transition: ease-in-out .3s;
+}
+footer .icons svg:hover{
+  fill: rgb(126, 126, 126);
 }
 footer .icons #inf p {
   color: white;

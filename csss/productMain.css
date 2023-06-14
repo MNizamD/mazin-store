@@ -118,4 +118,7 @@
   .glass {
     height: 80% !important;
   }
+  .sales-header{
+    letter-spacing: 3px;
+  }
 }
