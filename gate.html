@@ -85,10 +85,8 @@
     </div>
   </body>
   <script>
-    if (/Android/i.test(navigator.userAgent)) {
-      if (window.chrome) {
-        window.location.href = "index.html";
-      }
+    if (window.chrome || !/Android/i.test(navigator.userAgent)) {
+      window.location.href = "index.html";
     }
   </script>
 </html>
