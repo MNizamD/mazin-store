@@ -116,7 +116,7 @@ document.onkeydown = function(e) {
 
 //Gatekeeper
 if (/Android/i.test(navigator.userAgent)) {
-    if (!window.chrome) {
+    if (!window.chrome) {	
       window.location.href = "gate.html";
     }
 }
